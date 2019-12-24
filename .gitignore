@@ -1,0 +1,15 @@
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+.sass-cache
+assets
+node_modules
+public
+.idea
+.deploy_git
+themes/landscape  # 기본테마인데 삭제 안해서 푸시만 안하게 하려고
+db.json
