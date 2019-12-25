@@ -44,13 +44,13 @@ comments: true
 - 이제 우리는 크롤링을 할 때 가장 많이 쓰는 툴인 크롬 `개발자도구`를 써보겠습니다.
 - 크롬 개발자도구를 다음과 같이 키면 이런 화면이 나옵니다!
 
-![chromedriver](https://taebbong.github.io/assets/img/bap/bap2-1.png)
+![chromedriver](https://taebbong.github.io/images/blog/bap/bap2-1.png)
 
 - 이 화면에서 왼쪽 상단의 커서를 통해 내가 원하는 웹 구성 요소에 대한 정보를 얻을 수 있습니다.
 - 로그인을 하려면 id, password를 각각 입력하고 로그인 버튼을 눌러야겠죠?
 - 그러면 id 입력 창을 찾아보겠습니다.
 
-![chromedriver](https://taebbong.github.io/assets/img/bap/bap2-2.png)
+![chromedriver](https://taebbong.github.io/images/blog/bap/bap2-2.png)
 
 - 이렇게 보시면 input 태그의 id 입력창이 나오는데, 여기 `name = "id"` 보이시죠? 이걸 활용합니다.
 - 그럼 이제 파이썬으로 돌아와서 다음과 같이 코드를 작성해볼게요.
@@ -65,7 +65,7 @@ driver.find_element_by_name('id').send_keys('YOUR_BLACKBOARD_ID') # id 입력하
 - 비밀번호도 마찬가지로 진행합니다.
 - 이제 로그인 버튼을 눌러야 하는데, 로그인 버튼을 찾아서, **오른쪽 마우스 -> copy -> copy by xpath**를 눌러 복사합니다.
 
-![chromedriver](https://taebbong.github.io/assets/img/bap/bap2-3.png)
+![chromedriver](https://taebbong.github.io/images/blog/bap/bap2-3.png)
 
 - 코드는 이렇게 씁니다.
 
@@ -94,24 +94,24 @@ driver.find_element_by_xpath('//*[@id="entry-login"]').click()
 
 - 실행시키면 로그인이 원활하게 되는걸 볼 수 있어요:)
 
-![chromedriver](https://taebbong.github.io/assets/img/bap/bap2-4.png)
+![chromedriver](https://taebbong.github.io/images/blog/bap/bap2-4.png)
 
 ## 코스 과목 목록 가져오기
 
 - 이제부터는 크롤링의 핵심 도구인 `bs4`를 사용합니다!
 - 코스로 이동하면 다음과 같이 과목 리스트가 나옵니다.
 
-![chromedriver](https://taebbong.github.io/assets/img/bap/bap2-5.png)
+![chromedriver](https://taebbong.github.io/images/blog/bap/bap2-5.png)
 
 - 역시 개발자 도구로 분석해보면 다음과 같네요.
 
-![chromedriver](https://taebbong.github.io/assets/img/bap/bap2-6.png)
+![chromedriver](https://taebbong.github.io/images/blog/bap/bap2-6.png)
 
 - 다음에서 볼 수 있듯 큰 div 태그 안에 작은 `div id = _22_1termCourses__62_1`, 그 안에 `ul-li-a` 순서대로 나와있네요.
 - 결국 우리가 가져오고자 하는 건 ul-li-a 에 있는 과목별 주소 목록입니다.
 - 그래서 ul-li-a 의 href url을 눌러보니 다음과 같이 나오네요..!
 
-![chromedriver](https://taebbong.github.io/assets/img/bap/bap2-7.png)
+![chromedriver](https://taebbong.github.io/images/blog/bap/bap2-7.png)
 
 - 이런 경우에는 과목 url 패턴을 직접 분석해 볼 필요가 있습니다.
 
@@ -270,7 +270,7 @@ for i in course_detail_list:
 
 - 이제 실행시키면 감격스럽게도 이렇게 잘 나오네요!
 
-![chromedriver](https://taebbong.github.io/assets/img/bap/bap2-8.png)
+![chromedriver](https://taebbong.github.io/images/blog/bap/bap2-8.png)
 
 - 전체 코드는 [crawl-demo.py](https://github.com/TaeBbong/BlackBoard-Tutorial) 에서 확인하실 수 있어요!
 

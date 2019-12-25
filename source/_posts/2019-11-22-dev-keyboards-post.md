@@ -22,7 +22,7 @@ tag:
 
 수집도 돈이 있어야 한다. 어렸을 때는 만화책을 살 돈이 없으니 못샀지만, 용돈으로 유희왕 카드 정도는 다 모을 수 있었다. 또 부모님을 졸라 당시의 탑블레이드 팽이들을 나오는 족족 구매하여 수집했었다. 그러다 스스로 돈을 처음 벌기 시작한 대학교 1학년 때, 본인은 하스스톤이라는 게임에 푹 빠져 과외로 번 돈 대부분을 투자해 모든 카드를 모았고, 지금도 확장팩이 나올 때마다 웬만한 건 다 모으려고 하고 있다.
 
-![하스스톤 현질](/assets/img/hearth.png)
+![하스스톤 현질](/images/blog/hearth.png)
 
 (하스스톤에 여태 이정도 썼다..ㅎㅎ)
 
@@ -40,7 +40,7 @@ tag:
 
 ## 아이온코리아 PLANTIUM KB-324
 
-![kb-324](/assets/img/kb314.jpg)
+![kb-324](/images/blog/kb314.jpg)
 
 [제품 링크](http://prod.danawa.com/info/?pcode=3374314&keyword=%EC%95%84%EC%9D%B4%EC%98%A8%EC%BD%94%EB%A6%AC%EC%95%84%20PLANTIUM%20KB-324&cate=112782)
 
@@ -50,7 +50,7 @@ tag:
 
 ## 웨이코스 씽크웨이 CROAD C604 체리미엄 PBT 측각 한영 게이밍 키보드 (적축)
 
-![c604](/assets/img/c604.jpg)
+![c604](/images/blog/c604.jpg)
 
 [제품 링크](http://prod.danawa.com/info/?pcode=5825745&keyword=%EC%9B%A8%EC%9D%B4%EC%BD%94%EC%8A%A4%20%EC%94%BD%ED%81%AC%EC%9B%A8%EC%9D%B4%20CROAD%20C604%20%EC%B2%B4%EB%A6%AC%EB%AF%B8%EC%97%84%20PBT%20%EC%B8%A1%EA%B0%81%20%EC%A0%81%EC%B6%95&cate=112782)
 
@@ -62,7 +62,7 @@ tag:
 
 ## 코시 KB3139BT 멀티 페어링 블루투스 키보드
 
-![cosy](/assets/img/cosy.jpeg)
+![cosy](/images/blog/cosy.jpeg)
 
 [제품 링크](http://prod.danawa.com/info/?pcode=5217481&keyword=%EC%BD%94%EC%8B%9C%20%EB%A9%80%ED%8B%B0%ED%8E%98%EC%96%B4%EB%A7%81%20%ED%82%A4%EB%B3%B4%EB%93%9C&cate=112782)
 

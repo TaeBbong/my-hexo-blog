@@ -60,7 +60,7 @@ sched.start()
 
 - 드디어 모든 기능 작성이 완료되었습니다. 개발 완료!!
 
-![img](https://taebbong.github.io/assets/img/bap/bap5-1.png)
+![img](https://taebbong.github.io/images/blog/bap/bap5-1.png)
 
 - 이제 잠시 쉬었다가, 실제 서비스를 개발 해볼까 해요.
 - 앞서 아주 간단하게 말하긴 했지만, 우리가 여태까지 만든 프로젝트는 실제 서비스가 되기엔 많이 부족합니다.
