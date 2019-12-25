@@ -1,8 +1,10 @@
 ---
-layout: post
 title: "수집광 개발자가 키보드를 덕질할 때"
+excerpt: "TaeBbong의 일상"
+category:
+  - 생활
+  - 일상
 date: 2019-11-22
-excerpt: "TaeBbong의 생각"
 tag:
   - think
   - taebbong
@@ -10,8 +12,6 @@ tag:
   - 키보드
   - 개발자
   - 기계식키보드
-
-comments: true
 ---
 
 ## 수집광

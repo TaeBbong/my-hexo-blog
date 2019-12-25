@@ -1,18 +1,20 @@
 ---
 layout: post
-title:  "[개발TIP&기록] MYSQL 실행법 on MAC"
-date:   2018-03-03
+title: "[개발TIP&기록] MYSQL 실행법 on MAC"
+date: 2018-03-03
 excerpt: "MAC에서 MYSQL 실행하기"
-tag: 
-- MYSQL
-- SQL
-- DB
-- MAC
-- 맥
+category:
+  - 개발
+  - 개발 Tip
+tag:
+  - MYSQL
+  - SQL
+  - DB
+  - MAC
+  - 맥
 
 comments: true
 ---
-
 
 # mysql 실행법
 
@@ -24,4 +26,3 @@ $ ./mysql -u root -p
 >>> Enter password: <type your password>
 mysql>
 ```
-

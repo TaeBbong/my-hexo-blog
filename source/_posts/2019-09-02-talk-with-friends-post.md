@@ -3,6 +3,9 @@ layout: post
 title: "친구와의 대화"
 date: 2019-09-02
 excerpt: "TaeBbong의 생각"
+category:
+  - 생활
+  - 일상
 tag:
   - think
   - taebbong

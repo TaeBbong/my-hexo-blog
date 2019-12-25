@@ -3,6 +3,9 @@ layout: post
 title: "매일 한 줄 - 보이저엑스 인턴 출근 일기"
 date: 2019-07-08
 excerpt: "TaeBbong의 생각"
+category:
+  - 생활
+  - 워킹 라이프
 tag:
   - think
   - taebbong

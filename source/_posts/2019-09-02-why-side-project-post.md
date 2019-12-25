@@ -3,6 +3,9 @@ layout: post
 title: "왜 회사 다니며 사이드 프로젝트 해야할까"
 date: 2019-09-02
 excerpt: "TaeBbong의 생각"
+category:
+  - 생활
+  - 워킹 라이프
 tag:
   - think
   - taebbong

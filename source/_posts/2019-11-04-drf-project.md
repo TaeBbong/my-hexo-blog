@@ -3,7 +3,9 @@ layout: post
 title: "[Django Rest Framework로 게시판 처음부터 끝까지 만들기]"
 date: 2019-11-04
 excerpt: "Django Rest Framework 마스터"
-project: true
+category:
+  - 개발
+  - Django Rest Framework
 tag:
   - development
   - python

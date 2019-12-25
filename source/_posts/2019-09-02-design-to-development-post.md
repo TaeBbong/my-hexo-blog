@@ -3,6 +3,9 @@ layout: post
 title: "디자인부터 개발, 운영까지"
 date: 2019-09-02
 excerpt: "TaeBbong의 생각"
+category:
+  - 개발
+  - Dev with Design
 tag:
   - think
   - taebbong
