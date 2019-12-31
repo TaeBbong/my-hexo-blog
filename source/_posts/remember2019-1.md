@@ -44,6 +44,8 @@ category:
 
 공간을 빌리고 포스터를 만들어 홍보하고, 굿즈도 만들면서 각종 식사나 간식, 이벤트 등을 전부 준비하고 기획하는게 쉽지 않았지만 **정말 재밌어서** 스스로 할 수 있었던 활동들이었어요. 실제로 다른 동아리 친구들과 함께 운영진을 꾸려 진행해도 되었지만 1회 대회 때는 준비 과정이 너무 재밌어서 혼자 다 했었습니다! 2회 대회 때는 운영진을 꾸려서 진행했는데 여럿이서 진행하면서 얻는 편함과 불편함이 공존했었던 것 같아요.
 
+[2회 대회 상세 페이지](https://dev-in-xmas.web.app/)
+
 <img src="/images/blog/1회-1.JPG" style="border: 1px">
 <img src="/images/blog/1회-2.JPG" style="border: 1px">
 <img src="/images/blog/2회-1.jpeg" style="border: 1px">
