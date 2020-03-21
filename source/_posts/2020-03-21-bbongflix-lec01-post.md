@@ -12,7 +12,7 @@ tag:
 ---
 
 ```dart
-# lib/main.dart
+// lib/main.dart
 import 'package:flutter/material.dart';
 import 'package:netflix_clone_lecture_note/widget/bottom_bar.dart';
 
@@ -70,7 +70,7 @@ class _MyAppState extends State<MyApp> {
 ```
 
 ```dart
-# lib/widget/bottom_bar.dart
+// lib/widget/bottom_bar.dart
 import 'package:flutter/material.dart';
 
 class Bottom extends StatelessWidget {

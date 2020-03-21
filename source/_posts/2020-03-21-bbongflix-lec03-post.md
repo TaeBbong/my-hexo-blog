@@ -1,6 +1,6 @@
 ---
-title: "[무작정 플러터 강의노트] 02 홈 화면에 상단 바 추가하기"
-date: 2020-03-21 15:28:05
+title: "[무작정 플러터 강의노트] 03 영화 모델 만들고 더미 데이터 생성하기"
+date: 2020-03-21 15:28:06
 tags:
 excerpt: "무작정 플러터 강의노트"
 category:
@@ -13,6 +13,7 @@ tag:
 
 ```yaml
 # pubspec.yaml
+# The following section is specific to Flutter.
 flutter:
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
@@ -22,72 +23,64 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - images/bbongflix_logo.png
+    - images/test_movie_1.png
 ```
 
 ```dart
-// lib/main.dart
-import 'package:flutter/material.dart';
-import 'package:netflix_clone_lecture_note/screen/home_screen.dart';
-import 'package:netflix_clone_lecture_note/widget/bottom_bar.dart';
+// lib/model/model_movie.dart
+class Movie {
+  final String title;
+  final String keyword;
+  final String poster;
+  final bool like;
 
-void main() => runApp(MyApp());
+  Movie.fromMap(Map<String, dynamic> map)
+      : title = map['title'],
+        keyword = map['keyword'],
+        poster = map['poster'],
+        like = map['like'];
 
-class MyApp extends StatefulWidget {
-  _MyAppState createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  TabController controller;
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Bbongflix',
-      theme: ThemeData(
-        brightness: Brightness.dark,
-        primaryColor: Colors.black,
-        accentColor: Colors.white,
-      ),
-      home: DefaultTabController(
-        length: 4,
-        child: Scaffold(
-          body: TabBarView(
-            physics: NeverScrollableScrollPhysics(),
-            children: <Widget>[
-              HomeScreen(),
-              Container(
-                child: Center(
-                  child: Text('search'),
-                ),
-              ),
-              Container(
-                child: Center(
-                  child: Text('save'),
-                ),
-              ),
-              Container(
-                child: Center(
-                  child: Text('more'),
-                ),
-              ),
-            ],
-          ),
-          bottomNavigationBar: Bottom(),
-        ),
-      ),
-    );
-  }
+  String toString() => "Movie<$title:$keyword>";
 }
 ```
 
 ```dart
 // lib/screen/home_screen.dart
 import 'package:flutter/material.dart';
+import 'package:netflix_clone_lecture_note/model/model_movie.dart';
 
 class HomeScreen extends StatefulWidget {
   _HomeScreenState createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  List<Movie> movies = [
+    Movie.fromMap({
+      'title': '사랑의 불시착',
+      'keyword': '사랑/로맨스/판타지',
+      'poster': 'test_movie_1.png',
+      'like': false
+    }),
+    Movie.fromMap({
+      'title': '사랑의 불시착',
+      'keyword': '사랑/로맨스/판타지',
+      'poster': 'test_movie_1.png',
+      'like': false
+    }),
+    Movie.fromMap({
+      'title': '사랑의 불시착',
+      'keyword': '사랑/로맨스/판타지',
+      'poster': 'test_movie_1.png',
+      'like': false
+    }),
+    Movie.fromMap({
+      'title': '사랑의 불시착',
+      'keyword': '사랑/로맨스/판타지',
+      'poster': 'test_movie_1.png',
+      'like': false
+    }),
+  ];
   @override
   void initState() {
     super.initState();
