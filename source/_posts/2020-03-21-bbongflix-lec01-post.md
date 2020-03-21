@@ -11,8 +11,6 @@ tag:
   - 강의
 ---
 
-### 프로젝트 코드
-
 ```dart
 # lib/main.dart
 import 'package:flutter/material.dart';
