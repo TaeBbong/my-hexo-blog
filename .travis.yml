@@ -25,8 +25,8 @@ script:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 # 주의: <YOUR NAME>, <COMMIT MESSAGE>와 <YOUR EMAIL>를 변경해야합니다.
-deploy:
-  provider: script
-  script: sh deploy.sh
-  on:
-    branch: master
+# deploy:
+#   provider: script
+#   script: sh deploy.sh
+#   on:
+#     branch: master
