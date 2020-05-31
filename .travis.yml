@@ -26,7 +26,7 @@ script:
 ## Docs: https://hexo.io/docs/deployment.html
 # 주의: <YOUR NAME>, <COMMIT MESSAGE>와 <YOUR EMAIL>를 변경해야합니다.
 deploy:
-  provider: npm
+  provider: script
   type: git
   repo: https://__GITHUB_TOKEN__@github.com/TaeBbong/taebbong.github.io
   branch: master
