@@ -14,6 +14,8 @@ tag:
 
 프론트엔드(플러터) 레포: [https://github.com/TaeBbong/quiz_app_lecture](https://github.com/TaeBbong/quiz_app_lecture)
 백엔드(DRF) 레포: [https://github.com/TaeBbong/quiz_drf_lecture](https://github.com/TaeBbong/quiz_drf_lecture)
-인프런:
+인프런: [https://inflearn.com](https://inflearn.com)
 구름에듀:
 유튜브:
+
+hello travis!@
