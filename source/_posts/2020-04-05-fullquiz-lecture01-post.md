@@ -25,3 +25,5 @@ hello travis! now it's time for build:)
 this is test of ipad:)
 
 deploy done?
+
+중근 하이
