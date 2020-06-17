@@ -35,4 +35,5 @@ tag:
 
 위와 같은 예시를 플러터로 작성하려면 `StatefulWidget` 을 활용해야 합니다. 플러터에서는 기본적으로 `StatelessWidget` 과 `StatefulWidget` 을 상속받아 여러 종류의 위젯 클래스를 만들 수 있는데, 변화하는 상태가 있는 위젯은 `StatefulWidget`, 그렇지 않은, 한번 로드되면 변하지 않는 정적인 위젯은 `StatelessWidget` 로 만들게 됩니다.
 
-위의 UI 예시를 코드로 나타내면 다음과 같겠습니다.
+위의 UI 예시를 코드로 나타내면 다음과 같겠습니다. 
+
