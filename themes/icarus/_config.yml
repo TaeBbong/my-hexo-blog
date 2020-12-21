@@ -106,7 +106,7 @@ widgets:
     # Author name to be shown in the profile widget
     author: 권태형(TaeBbong)
     # Title of the author to be shown in the profile widget
-    author_title: 플러터와 장고를 좋아하는 개발자입니다.
+    author_title: 플러터와 장고를 좋아하는 개발자
     # Author's current location to be shown in the profile widget
     location: 고려대학교
     # Path or URL to the avatar to be shown in the profile widget
