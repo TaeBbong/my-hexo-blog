@@ -5,6 +5,15 @@ tags:
 category:
   - 생활
   - 회고
+toc: true
+widgets:
+  - type: toc
+    position: left
+  - type: category
+    position: left
+sidebar:
+  left:
+    sticky: true
 ---
 
 어느덧 벌써 2020년이 지나고 회고록을 또 쓰게 되었네요. 유독 올 한해는 시간이 참 빨리 지나갔던 것 같습니다. 회고록을 쓰다보면 글이 항상 길어지는데, 이번에는 `개발 관련 활동`, `배웠던 것`, `앞으로의 목표`를 위주로 간단하게 작성해볼까 합니다.
