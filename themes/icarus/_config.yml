@@ -126,10 +126,10 @@ widgets:
         icon: fab fa-facebook
         url: "https://facebook.com/taebbong"
       Tistory:
-        icon: fab fa-twitter
+        icon: fab fa-tumblr
         url: "https://taebbong.tistory.com"
       Buy Me A Coffee:
-        icon: fab fa-coffee
+        icon: far fa-coffee-togo
         url: "https://www.buymeacoffee.com/sk6xYJT"
   - # Widget name
     type: links
