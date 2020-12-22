@@ -18,26 +18,6 @@
     }) %>
 <% } %>
 
-<% if (is_home()) { %>
-<%- open_graph({
-          image:          '/images/blog/placeholder-big.jpg',
-          twitter_id: get_config('open_graph.twitter_id'),
-          twitter_site: get_config('open_graph.twitter_site'),
-          google_plus: get_config('open_graph.google_plus'),
-          fb_admins: get_config('open_graph.fb_admins'),
-          fb_app_id: get_config('open_graph.fb_app_id'),
-      }) %>
-<% } else { %>
-<%- open_graph({
-        image:          thumbnail(page),
-        twitter_id: get_config('open_graph.twitter_id'),
-        twitter_site: get_config('open_graph.twitter_site'),
-        google_plus: get_config('open_graph.google_plus'),
-        fb_admins: get_config('open_graph.fb_admins'),
-        fb_app_id: get_config('open_graph.fb_app_id'),
-    }) %>
-<% } %>
-
 <% if (has_config('canonical_url')) { %>
 <link rel="canonical" href="<%- get_config('canonical_url') %>" />
 <% } %>
