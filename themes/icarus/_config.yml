@@ -14,7 +14,7 @@ logo: /images/logo_16bit_ratio.png
 # https://hexo.io/docs/helpers.html#open-graph
 open_graph:
   # Facebook App ID
-  fb_app_id:
+  fb_app_id: 176484870844199
   # Facebook Admin ID
   fb_admins:
   # Twitter ID
