@@ -129,7 +129,7 @@ widgets:
         icon: fab fa-tumblr
         url: "https://taebbong.tistory.com"
       Buy Me A Coffee:
-        icon: far fa-coffee-togo
+        icon: fab fa-cc-paypal
         url: "https://www.buymeacoffee.com/sk6xYJT"
   - # Widget name
     type: links
