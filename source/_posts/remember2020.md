@@ -1,5 +1,6 @@
 ---
 title: "[회고록] 플러터 개발자의 2020년 돌아보기"
+thumbnail: images/blog/profile.png
 date: 2020-12-18 20:56:02
 tags:
 category:
