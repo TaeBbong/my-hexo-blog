@@ -15,6 +15,20 @@ widgets:
 sidebar:
   left:
     sticky: true
+head:
+    # Canonical URL of the current page
+    canonical_url: https://taebbong.github.io
+    # Open Graph metadata
+    # https://hexo.io/docs/helpers.html#open-graph
+    open_graph:
+        # Page title (og:title) (optional)
+        # title: op_title
+        # Page type (og:type) (optional)
+        # type: blog
+        # Page URL (og:url) (optional)
+        # url: https://test/hello
+        # Page cover (og:image) (optional) Default to the Open Graph image or thumbnail of the page
+        image: https://taebbong.github.io/images/placeholder-big-1.jpg
 ---
 
 어느덧 벌써 2020년이 지나고 회고록을 또 쓰게 되었네요. 유독 올 한해는 시간이 참 빨리 지나갔던 것 같습니다. 회고록을 쓰다보면 글이 항상 길어지는데, 이번에는 `개발 관련 활동`, `배웠던 것`, `앞으로의 목표`를 위주로 간단하게 작성해볼까 합니다.
