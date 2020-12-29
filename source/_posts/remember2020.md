@@ -1,6 +1,7 @@
 ---
 title: "[회고록] 플러터 개발자의 2020년 돌아보기"
 excerpt: "2020년을 마무리하며 올해도 회고록을 작성해보았습니다."
+thumbnail: https://taebbong.github.io/images/placeholder-big-1.jpg 
 date: 2020-12-18 20:56:02
 tags:
 category:
