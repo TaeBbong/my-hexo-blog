@@ -17,18 +17,8 @@ sidebar:
   left:
     sticky: true
 head:
-    # Canonical URL of the current page
     canonical_url: https://taebbong.github.io
-    # Open Graph metadata
-    # https://hexo.io/docs/helpers.html#open-graph
     open_graph:
-        # Page title (og:title) (optional)
-        # title: op_title
-        # Page type (og:type) (optional)
-        # type: blog
-        # Page URL (og:url) (optional)
-        # url: https://test/hello
-        # Page cover (og:image) (optional) Default to the Open Graph image or thumbnail of the page
         image: https://taebbong.github.io/images/placeholder-big-1.jpg
 ---
 
