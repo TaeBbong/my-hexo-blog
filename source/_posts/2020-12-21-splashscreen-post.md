@@ -1,7 +1,7 @@
 ---
-title: [플러터 핵심 팁 백과사전] 001. SplashScreen 만들기
-excerpt: "그럴듯한 앱을 만들기 위한 가장 첫 단계는 SplashScreen 입니다."
-thumbnail: https://taebbong.github.io/images/placeholder-big-1.jpg 
+title: "[플러터 팁 백과사전] 001. SplashScreen"
+excerpt: "그럴듯한 앱을 위한 첫 단계는 로고로 시작하는 SplashScreen 입니다."
+thumbnail: https://taebbong.github.io/images/placeholder-big-1.jpg
 date: 2020-12-19 20:23:36
 tags:
 category:
@@ -17,9 +17,9 @@ sidebar:
   left:
     sticky: true
 head:
-    canonical_url: https://taebbong.github.io
-    open_graph:
-        image: https://taebbong.github.io/images/placeholder-big-1.jpg
+  canonical_url: https://taebbong.github.io
+  open_graph:
+    image: https://taebbong.github.io/images/placeholder-big-1.jpg
 ---
 
 ## 1. SplashScreen??
