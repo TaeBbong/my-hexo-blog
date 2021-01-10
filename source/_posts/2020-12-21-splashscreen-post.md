@@ -26,8 +26,6 @@ head:
 
 SplashScreen은 앱이 실행될 때 처음 나타나게 되는 일종의 소개 화면입니다. 주로 앱 로고 등을 넣어 사용자에게 어떤 앱인지 알려주는 용도로 사용합니다. 또한 사용자에게는 안보이지만, 앱에서 시간을 들여 가져와야 하는 데이터를 가져올 때 SplashScreen이 보여지는 동안 가져오기도 합니다.
 
-<img src="/images/blog/splash1.png" style="border: 1px">
-
 ## 2. SplashScreen의 종류
 
 SplashScreen에도 종류가 있습니다. 안드로이드/iOS 각 OS의 Native한 SplashScreen과, Flutter App 단의 SplashScreen 이렇게 두개로 나눠지게 됩니다. 만약 기존에 Flutter 단에서 SplashScreen을 잘 만들고 시행했을 때 검은색 혹은 흰색의 기본 화면이 잠시 나오다가 Flutter SplashScreen이 나오는 경험을 하신 적 있다면, 그것이 두 종류의 SplashScreen을 확인한 것입니다.
