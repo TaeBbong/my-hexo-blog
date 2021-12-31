@@ -6,6 +6,8 @@ comments: false
 
 플러터와 장고를 좋아하는 개발자, 강의 제작자입니다:)
 
+이력서 보기 : [노션](https://organized-clownfish-f2a.notion.site/TaeBbong-cebd6a3448c44417b0164361791b42fe)
+
 ## 프로필
 
 - 권태형 (KWON TAE HYUNG, TaeBbong)
