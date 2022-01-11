@@ -71,6 +71,10 @@ sidebar:
 
 #### keytool 활용 키 생성(.keystore)
 
+=> keystore 비밀번호와 key alias 비밀번호가 같으면 에러 발생
+
+[](https://medium.com/flutter-community/flutter-sign-in-with-google-in-android-without-firebase-a91b977d166f)
+
 ### 2. iOS
 
 #### iOS 키체인 생성
