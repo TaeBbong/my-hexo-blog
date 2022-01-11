@@ -24,6 +24,12 @@ sidebar:
 
 ## 소셜 로그인 구현하기
 
+https://debaeloper.tistory.com/68
+
 ### Google
 
+[](https://medium.com/flutter-community/flutter-sign-in-with-google-in-android-without-firebase-a91b977d166f)
+
 ### Kakao
+
+[](https://velog.io/@kmh339/Flutter-kakao-%EC%86%8C%EC%85%9C%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B5%AC%ED%98%84)
