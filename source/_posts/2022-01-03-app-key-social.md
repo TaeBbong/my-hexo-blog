@@ -25,6 +25,10 @@ sidebar:
 
 [](https://jw910911.tistory.com/53)
 
+안드로이드 디버그 키 해시
+
+keytool -exportcert -alias androiddebugkey -keystore ./key.jks | openssl sha1 -binary | openssl base64
+
 
 ### 1. 안드로이드
 
