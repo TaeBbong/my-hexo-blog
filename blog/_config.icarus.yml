@@ -3,11 +3,11 @@ version: 5.0.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: default
 # Path or URL to the website's logo
-logo: /images/logo.svg
+logo: /images/logo_16bit_large.png
 # Page metadata configurations
 head:
   # URL or path to the website's icon
-  favicon: /images/favicon.svg
+  favicon: /images/favicon.ico
   # Web application manifests configuration
   # https://developer.mozilla.org/en-US/docs/Web/Manifest
   manifest:
@@ -28,7 +28,7 @@ head:
     # Image files that can serve as application icons for different contexts
     icons:
       - # The path to the image file
-        src: ""
+        src: "/images"
         # A string containing space-separated image dimensions
         sizes: ""
         # A hint as to the media type of the image
@@ -217,11 +217,11 @@ widgets:
     position: left
     type: profile
     # Author name
-    author: Your name
+    author: TaeBbong
     # Author title
-    author_title: Your title
+    author_title: 권태형
     # Author's current location
-    location: Your location
+    location:
     # URL or path to the avatar image
     avatar:
     # Whether show the rounded avatar image
@@ -229,24 +229,15 @@ widgets:
     # Email address for the Gravatar
     gravatar:
     # URL or path for the follow button
-    follow_link: https://github.com/ppoffice
+    follow_link: https://github.com/TaeBbong
     # Links to be shown on the bottom of the profile widget
     social_links:
       Github:
         icon: fab fa-github
-        url: https://github.com/ppoffice
+        url: https://github.com/TaeBbong
       Facebook:
         icon: fab fa-facebook
-        url: https://facebook.com
-      Twitter:
-        icon: fab fa-twitter
-        url: https://twitter.com
-      Dribbble:
-        icon: fab fa-dribbble
-        url: https://dribbble.com
-      RSS:
-        icon: fas fa-rss
-        url: /
+        url: https://facebook.com/taebbong
   # Table of contents widget configurations
   - # Where should the widget be placed, left sidebar or right sidebar
     position: left
@@ -257,62 +248,54 @@ widgets:
     collapsed: true
     # Maximum level of headings to show (1-6)
     depth: 3
-  # Recommendation links widget configurations
-  - # Where should the widget be placed, left sidebar or right sidebar
-    position: left
-    type: links
-    # Names and URLs of the sites
-    links:
-      Hexo: https://hexo.io
-      Bulma: https://bulma.io
   # Categories widget configurations
   - # Where should the widget be placed, left sidebar or right sidebar
     position: left
     type: categories
   # Recent posts widget configurations
-  - # Where should the widget be placed, left sidebar or right sidebar
-    position: left
-    type: recent_posts
-  # Archives widget configurations
-  - # Where should the widget be placed, left sidebar or right sidebar
-    position: left
-    type: archives
-  # Tags widget configurations
-  - # Where should the widget be placed, left sidebar or right sidebar
-    position: left
-    type: tags
-    # How to order tags. For example 'name' to order by name in ascending order, and '-length' to order by number of posts in each tags in descending order
-    order_by: name
-    # Amount of tags to show. Will show all if not set.
-    amount:
-    # Whether to show tags count, i.e. number of posts in the tag.
-    show_count: true
-  # Google FeedBurner email subscription widget configurations
-  - # Where should the widget be placed, left sidebar or right sidebar
-    position: left
-    type: subscribe_email
-    # Hint text under the email input
-    description:
-    # Feedburner ID
-    feedburner_id: ""
+  # - # Where should the widget be placed, left sidebar or right sidebar
+  #   position: left
+  #   type: recent_posts
+  # # Archives widget configurations
+  # - # Where should the widget be placed, left sidebar or right sidebar
+  #   position: left
+  #   type: archives
+  # # Tags widget configurations
+  # - # Where should the widget be placed, left sidebar or right sidebar
+  #   position: left
+  #   type: tags
+  #   # How to order tags. For example 'name' to order by name in ascending order, and '-length' to order by number of posts in each tags in descending order
+  #   order_by: name
+  #   # Amount of tags to show. Will show all if not set.
+  #   amount:
+  #   # Whether to show tags count, i.e. number of posts in the tag.
+  #   show_count: true
+  # # Google FeedBurner email subscription widget configurations
+  # - # Where should the widget be placed, left sidebar or right sidebar
+  #   position: left
+  #   type: subscribe_email
+  #   # Hint text under the email input
+  #   description:
+  #   # Feedburner ID
+  #   feedburner_id: ""
   # Google AdSense unit configurations
-  - # Where should the widget be placed, left sidebar or right sidebar
-    position: left
-    type: adsense
-    # AdSense client ID
-    client_id: ""
-    # AdSense AD unit ID
-    slot_id: ""
+  # - # Where should the widget be placed, left sidebar or right sidebar
+  #   position: left
+  #   type: adsense
+  #   # AdSense client ID
+  #   client_id: ""
+  #   # AdSense AD unit ID
+  #   slot_id: ""
   # Follow.it email subscription widget configurations
-  - # Where should the widget be placed, left sidebar or right sidebar
-    position: left
-    type: followit
-    # Hint text under the email input
-    description:
-    # Subscription form action URL
-    action_url: ""
-    # Feed claiming verification code
-    verification_code: ""
+  # - # Where should the widget be placed, left sidebar or right sidebar
+  #   position: left
+  #   type: followit
+  #   # Hint text under the email input
+  #   description:
+  #   # Subscription form action URL
+  #   action_url: ""
+  #   # Feed claiming verification code
+  #   verification_code: ""
 # Plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/
 plugins:
