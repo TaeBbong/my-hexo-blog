@@ -74,11 +74,11 @@ comments: true
 
 - Pycharm 환경에서는 File -> Setting -> Project Intepreter(windows) / Pycharm -> Preference -> Project Intepreter(mac)으로 이동합니다.
 
-![bap1-2](https://taebbong.github.io/images/blog/bap/bap1-2.png)
+![bap1-2](img/images/blog/bap/bap1-2.png)
 
 - 여기서 selenium을 검색, 설치합니다.
 
-![bap1-3](https://taebbong.github.io/images/blog/bap/bap1-3.png)
+![bap1-3](img/images/blog/bap/bap1-3.png)
 
 - 설치가 완료 되었습니다!
 
@@ -102,7 +102,7 @@ smtp
 - Selenium이 실제 브라우저를 작동시키기 위해서는 웹 브라우저 드라이버 실행파일이 필요합니다.
 - 대표적으로 사용하는 드라이버는 역시 `ChromeDriver`입니다.
 
-![chromedriver](https://taebbong.github.io/images/blog/bap/bap1-8.png)
+![chromedriver](img/images/blog/bap/bap1-8.png)
 
 - 다음 링크에 이동하여 각자의 OS에 맞는 드라이버를 설치합니다.
 - [ChromeDriver](http://chromedriver.chromium.org/downloads)
@@ -132,7 +132,7 @@ driver.get('https://www.naver.com') # 원하는 URL로 이동하기
 
 - 실행하면 다음과 같이 크롬이 열립니다.
 
-![bap1-7](https://taebbong.github.io/images/blog/bap/bap1-7.png)
+![bap1-7](img/images/blog/bap/bap1-7.png)
 
 - 코드는 주석으로 충분한 설명이 되었을거라 믿습니다:)
 

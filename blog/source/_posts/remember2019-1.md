@@ -46,11 +46,11 @@ category:
 
 [2회 대회 상세 페이지](https://dev-in-xmas.web.app/)
 
-<img src="/images/blog/1회-1.JPG" style="border: 1px">
-<img src="/images/blog/1회-2.JPG" style="border: 1px">
-<img src="/images/blog/2회-1.jpeg" style="border: 1px">
-<img src="/images/blog/2회-2.jpeg" style="border: 1px">
-<img src="/images/blog/2회-3.jpeg" style="border: 1px">
+<img src="/img/images/blog/1회-1.JPG" style="border: 1px">
+<img src="/img/images/blog/1회-2.JPG" style="border: 1px">
+<img src="/img/images/blog/2회-1.jpeg" style="border: 1px">
+<img src="/img/images/blog/2회-2.jpeg" style="border: 1px">
+<img src="/img/images/blog/2회-3.jpeg" style="border: 1px">
 
 무엇보다 가장 기억에 남는 것은 **동아리 부원들의 실력이 성장했음을 볼 수 있던 것**과 **동아리의 틀이 잡혀가고 있었다는 것**이었습니다. 1학기에 열었던 1회 대회 때는 개발을 시작한지 3~6개월 되는 부원들이 뭐라도 만드려고 노력했었습니다. 다들 그때만 해도 기본적인 실수나 고민, 에러에 부딪혀 고생했었는데, 2학기에 열린 2회 대회 때는 다들 성장하여 정말 다양하고 창의적이며 기술력도 꽤 높은 결과물을 내놓더라구요. 다들 스스로 공부를 열심히 한 덕분이지만 **_개발 동아리를 만들지 않았더라면 이 중에 절반은 아직 개발을 안해보지 않았을까_**라는 생각이 들면서 동아리에 대한 `뿌듯함`을 느낄 수 있었습니다.
 

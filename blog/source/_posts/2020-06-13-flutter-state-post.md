@@ -22,11 +22,11 @@ tag:
 
 상태를 아주 간단히 이해해봅시다. 상태란 (언제든) 바뀔 수 있는 데이터입니다! 뭔가 거창한 것 같은 이름인데 별게 없습니다ㅎㅎ.. 그림으로 좀 더 자세히 확인해보겠습니다.
 
-<img src="https://taebbong.github.io/images/blog/flutterstate1.png" style="border: 1px">
+<img src="img/images/blog/flutterstate1.png" style="border: 1px">
 
 해당 이미지는 플러터 공식 홈페이지에 있는 상태에 대한 예시 이미지입니다. 별 모양 버튼으로 찜하기를 할 수 있는 것을 확인할 수 있습니다.
 
-<img src="https://taebbong.github.io/images/blog/flutterstate2.png" style="border: 1px">
+<img src="img/images/blog/flutterstate2.png" style="border: 1px">
 
 위 그림처럼 별 모양을 누르면 별이 색칠되면서 카운트가 증가하고, 별 모양을 다시 누르면 별이 흰 색이 되며 카운트가 감소합니다.
 
@@ -201,7 +201,7 @@ Row(
 
 이제 앱에서 버튼을 눌러보면 아래와 같은 일이 발생합니다. 아주 매끄럽게 버튼을 누를 때마다 화면의 요소들이 변경되는 것을 확인할 수 있습니다.
 
-<img src="https://taebbong.github.io/images/blog/flutterstate3.gif" style="border: 1px">
+<img src="img/images/blog/flutterstate3.gif" style="border: 1px">
 
 살짝의 해설을 덧붙이자면, `setState()`가 실행될 때마다 해당 위젯은 다시 빌드가 됩니다. 앱 전체가 아닌 해당 부분만 다시 빌드되기 때문에 우리는 어떠한 부자연스러움 없이 자연스럽게 동작에 대한 변화를 확인할 수 있습니다. 다시 빌드가 되는 방식이기 때문에 단지 서로 다른 `_isPressed` 값에 대한 UI를 선언해주는 것만으로 화면을 변경시킬 수 있습니다.
 

@@ -1,7 +1,7 @@
 ---
 title: "[회고록] 책을 쓰며 도를 닦았던 개발자의 2021년"
 excerpt: "기나긴 2021년을 마무리하며 올해도 회고록을 작성해보았습니다."
-thumbnail: https://taebbong.github.io/images/placeholder-big-1.jpg 
+thumbnail: img/images/placeholder-big-1.jpg 
 date: 2021-12-30 20:56:02
 tags:
 category:
@@ -19,7 +19,7 @@ sidebar:
 head:
     canonical_url: https://taebbong.github.io
     open_graph:
-        image: https://taebbong.github.io/images/placeholder-big-1.jpg
+        image: img/images/placeholder-big-1.jpg
 ---
 
 2020년에 했던 주요 활동은 (입대 전) `플러터 영상 강의 제작`, `책 집필 시작`, 본격적인 `개발 공부 시작` 등이 있었습니다. 그리고 올해 2021년에 계획했던 것은 `포트폴리오 페이지`, `앱 서비스 런칭`, `컨텐츠 제작`이었습니다. 항상 회고를 쓰면 나름 계획을 세우기도 하는데 정작 그 계획은 2021년이 끝날 때쯤 회고를 쓰기 위해 처음 보게 되었네요.. 당초 계획과는 꽤 거리가 먼 활동들을 했는데, 하나씩 간단히 정리해보겠습니다.

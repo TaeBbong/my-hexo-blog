@@ -1,7 +1,7 @@
 ---
 title: "[개발] 앱 개발자 키 & 앱 서명에 관하여"
 excerpt: "내가 보고 쓰려는 앱 개발자 키 내용 정리"
-thumbnail: https://taebbong.github.io/images/blog/flutter-logo-sharing.png
+thumbnail: img/images/blog/flutter-logo-sharing.png
 date: 2022-01-03 20:23:36
 tags:
 category:
@@ -38,7 +38,7 @@ keytool -exportcert -alias androiddebugkey -keystore ./key.jks | openssl sha1 -b
 
 #### 구버전
 
-![](https://developer.android.com/studio/images/publish/appsigning_selfmanagediagram_2x.png?hl=ko)
+![](https://developer.android.com/studio/img/images/publish/appsigning_selfmanagediagram_2x.png?hl=ko)
 
 앱 서명키 저장소는 서명키(비밀키)와 인증서(공개키)로 구성된다. 처음 키를 생성하면 서명키(비밀키)와 인증서(공개키) 쌍이 생성되는 것이다. 기본적인 서명 알고리즘과 동일하다.
 
@@ -56,7 +56,7 @@ keytool -exportcert -alias androiddebugkey -keystore ./key.jks | openssl sha1 -b
 
 #### 신버전(앱 서명 키 + 앱 업로드 키)
 
-![](https://developer.android.com/studio/images/publish/appsigning_googleplayappsigningdiagram_2x.png?hl=ko)
+![](https://developer.android.com/studio/img/images/publish/appsigning_googleplayappsigningdiagram_2x.png?hl=ko)
 
 2021년부터 공식 방법으로 채택되었기 때문에 사실 이것만 알고 있으면 된다. 안드로이드 공식 문서에도 해당 내용을 먼저, 주로 설명하고 있다.
 기존 방식에서 앱 업로드 키 개념이 추가되었다.

@@ -1,7 +1,7 @@
 ---
 title: "[회고록] 2022년"
 excerpt: "다사다난했던 2022년을 마무리하며 올해도 회고록을 작성해보았습니다."
-thumbnail: https://taebbong.github.io/images/placeholder-big-1.jpg 
+thumbnail: img/images/placeholder-big-1.jpg 
 date: 2022-12-29 20:56:02
 tags:
 category:
@@ -19,7 +19,7 @@ sidebar:
 head:
     canonical_url: https://taebbong.github.io
     open_graph:
-        image: https://taebbong.github.io/images/placeholder-big-1.jpg
+        image: img/images/placeholder-big-1.jpg
 ---
 
 2022년은 여러가지로 기억에 남을만한 한 해일 것 같습니다. 무엇 하나 예상대로 흘러간 것이 없고, 무엇 하나 바라던 일이 된 적도 없습니다. 의지와 상관 없이 흘러가던 시간 속에서 예상치 못한 보상도 있었으나, 잃은 것이 더 많았다는 생각이 이따금 들었던 해였습니다. 작년에 개발 차원에서 목표했던 일은 `iOS 개발`이었고, 이에 대한 활동으로 `개발 동아리`를 하려 했지만 근처에도 가보지 않았습니다. 대신 많은 것들이 그 시간을 채웠으니, 그 채워진 시간에 대해 이야기하며 2022년을 정리해보겠습니다. 

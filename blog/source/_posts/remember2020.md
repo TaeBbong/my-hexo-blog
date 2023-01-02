@@ -1,7 +1,7 @@
 ---
 title: "[회고록] 플러터 개발자의 2020년 돌아보기"
 excerpt: "2020년을 마무리하며 올해도 회고록을 작성해보았습니다."
-thumbnail: https://taebbong.github.io/images/placeholder-big-1.jpg 
+thumbnail: img/images/placeholder-big-1.jpg 
 date: 2020-12-18 20:56:02
 tags:
 category:
@@ -19,7 +19,7 @@ sidebar:
 head:
     canonical_url: https://taebbong.github.io
     open_graph:
-        image: https://taebbong.github.io/images/placeholder-big-1.jpg
+        image: img/images/placeholder-big-1.jpg
 ---
 
 어느덧 벌써 2020년이 지나고 회고록을 또 쓰게 되었네요. 유독 올 한해는 시간이 참 빨리 지나갔던 것 같습니다. 회고록을 쓰다보면 글이 항상 길어지는데, 이번에는 `개발 관련 활동`, `배웠던 것`, `앞으로의 목표`를 위주로 간단하게 작성해볼까 합니다.
@@ -43,7 +43,7 @@ head:
 첫 강의는 **[무작정 플러터] Flutter+Firebase로 넷플릭스 클론코딩하기** 였고 (`@guinness`의 로고 협찬),
 첫 강의 만들고 기분이 너무 좋아 바로 진행한 두번째 강의는 **[무작정 풀스택] 플러터와 장고로 1시간만에 퀴즈앱/서버 만들기** 였습니다.
 
-<img src="/images/blog/2020_3.png" style="border: 1px">
+<img src="/img/images/blog/2020_3.png" style="border: 1px">
 
 각각 3월 24일, 4월 6일에 공개하였는데 12월 19일인 현재 수강생이 인프런에서 `1985명`, `2167명`이네요. 무료로 공개한 강의인 점을 감안하여도 개인적으로 기대 이상의 관심과 사랑을 받은 것 같아 많이 놀랍고 뿌듯했고, 감사했습니다. 강의 하나 만들 때 2~3주 정도는 매일 새벽 내내 강의를 만든 만큼 참 집중하여 진행했던 것 같습니다. 이제 직장이 생겨 그런 라이프패턴으로 살 수 없지만 언젠가 휴가를 길게 쓰고 새로운 강의를 만들어볼까 하는 생각을 항상 갖고 있습니다.
 
@@ -61,7 +61,7 @@ head:
 
 그래서 꾸준히 `낯선 부분`을 건드리려 하고 있습니다. 8~9월부터 그렇게 생각하고 지냈는데 직장을 다니게 되고 출퇴근의 늪에 빠지다보니 진도가 많이 나가진 않았던 것 같네요. 그래도 `Provider`를 어느정도 편하게 쓸 수 있게 되고, `플러터 웹`을 조금 더 웹스럽게 만드는 방법을 알게 되고 이외 자잘한 내용들을 공부할 수 있었습니다.
 
-<img src="/images/blog/2020_4.png" style="border: 1px">
+<img src="/img/images/blog/2020_4.png" style="border: 1px">
 
 매일 퇴근 후 `@guinness`와 구글 미팅을 키고 1시간 반 정도 개발 공부나 프로젝트를 하는데 이 시간이 없다면 분명 퇴근하고 누워있다 잠드는 하루들이 반복되지 않았을까 싶습니다. 앞으로도 매일 잘 부탁드립니다:)
 
