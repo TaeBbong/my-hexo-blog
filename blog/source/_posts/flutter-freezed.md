@@ -133,3 +133,10 @@ Map<String, dynamic> _$$_MemberToJson(_$_Member instance) => <String, dynamic>{
 ## 사용 예제
 
 ## 원리 이해(with immutable)
+
+사실 freezed는 모델 클래스 자동생성을 위한 코드 생성기이기도 하지만, 이 과정에서 많은 기능을 한번에 생성해주기 위해 다양한 개념을 포함한다.
+freezed는 기본적으로 JSON Serialize 기능을 가지며, 객체간 비교를 위한 equal, 객체 복사를 위한 deepCopy(copyWith)을 가진다.
+이 중 JSON Serialize나 equal은 개념적으로 더 이해할 것이 없으므로, deepCopy와 immutable에 대해 알아보자.
+
+immutable은 말 그대로 불변이라는 뜻이며, 객체가 생성되면 그 값은 더 이상 변할 수 없다는 것이다.
+화면 A와 B에서 공통적으로 사용하는 객체가 있다면, 이 객체의 
