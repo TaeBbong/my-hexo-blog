@@ -131,3 +131,5 @@ Map<String, dynamic> _$$_MemberToJson(_$_Member instance) => <String, dynamic>{
 사용은 동일하게 사용할 수 있으며, 앞선 요구사항이었던 부가기능들(copyWith, toString)도 사용 가능
 
 ## 사용 예제
+
+## 원리 이해(with immutable)
