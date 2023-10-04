@@ -130,8 +130,6 @@ Map<String, dynamic> _$$_MemberToJson(_$_Member instance) => <String, dynamic>{
 물론 직접 개발한 것보단 코드도 길지만 어차피 자동생성이니 신경쓸 필요 없음.
 사용은 동일하게 사용할 수 있으며, 앞선 요구사항이었던 부가기능들(copyWith, toString)도 사용 가능
 
-## 사용 예제
-
 ## 원리 이해(with immutable)
 
 사실 freezed는 모델 클래스 자동생성을 위한 코드 생성기이기도 하지만, 이 과정에서 많은 기능을 한번에 생성해주기 위해 다양한 개념을 포함한다.
@@ -144,8 +142,33 @@ immutable은 말 그대로 불변이라는 뜻이며, 데이터가 생성되면 
 결국 변수에는 실제 값이 들어있는게 아닌, 데이터 값이 있는 주소값이 변수에 들어가는 것이다. (물론 우리 눈에는 보이지 않지만)
 그럼 기존에 있던, 더이상 참조할 수 없는 데이터는? Dart의 Garbage Collector가 열일하면서 데이터를 메모리 상에서 정리한다.
 이런식으로 동작하는 원리는 문서상 나이브하게 적혀있는데, 개발자가 의도하지 않은 방향으로 데이터가 변조되는 것을 막는 역할이라고 한다.
-아마 개발 문서라서 관련 내용을 간단히 적은 것 같은데, 보안 관점에서 보면 String과 같이 데이터의 길이를 정해놓지 않고 받는 변수의 경우 데이터 변조에 의한 취약점이 나타날 수 있다. (추정) 
-물론 개발 단계에서 논리적인 문제를 방지할 수도 있다.
+이를테면 사용자가 프로필 수정 페이지에서 닉네임을 고치고, 수정 완료 버튼을 눌렀다 곧바로 취소했다면 어떻게 될까?
+만약 immutable이 아닌 방식이라면 다음과 같이 되었을 것이다.
+
+```dart
+Person user = Person(nickname: "taehyung");
+user.nickname = "taebbong";
+modifyNickname(user); // 여기를 취소
+```
+
+일반적인 로직으로는 취소에 대한 상황을 고려하지 않는데, 그렇다면 현재 상태에서 user.nickname은 기존 닉네임인 "taehyung"이 아닌 "taebbong"이 된다.
+취소를 했기 때문에 서버로 이 내용이 전달되지 않았고, 기기 상태에서도 반영되지 않아야 하는데 말이다.
+
+만약 immutable한 방식으로 새로운 객체를 만들도록 로직을 구현한다면 어떨까.
+
+```dart
+Person user = Person(nickname: "taehyung");
+Person newUser = user;
+newUser.nickname = "taebbong"; // 실제로 이렇게 수정하진 않지만 개념상 보자.
+modifyNickname(newUser).then(() {
+    user = newUser;
+}); // 여기를 취소
+
+```
+
+이러면 newUser가 서버로 전달되든 안되든 user.nickname은 계속 "taehyung"이 된다.
+서버로 데이터가 전달된 이후에 user 객체를 갱신하므로 이벤트 취소와 관계 없이 user 상태 값이 온전히 잘 유지된다. 
+이 과정에서 newUser라는 새로운 객체를 생성했는데, 왜냐면 immutable 개념에 따라 기존 객체인 user를 수정하지 못하고 새로운 객체를 만들어야 하기 때문이다.
 
 이와 같은 개념을 활용해서 모든 변수들을 생성하고 선언한 이후 데이터가 바뀌지 않도록 하는 것을 immutable이라고 할 수 있겠다.
 
@@ -159,4 +182,38 @@ final은 런타임 때 변수에 데이터를 할당하고, const는 컴파일 �
 
 이를테면 클래스의 필드는 final로 작성하지만, 클래스의 생성자는 const로 작성하기도 한다.
 
+```dart
+class Person {
+    final String name;
+    final String address;
+    final int age;
 
+    const Person({required this.name, required this.address, required this.age});
+}
+```
+
+## copyWith
+
+아무튼 이러다보니 일반적인 방법으로는 객체의 필드 값을 변경할 수 없다.
+기본적으로 immutable 방식은 기존 객체의 값을 변경하는 것이 아닌 새로운 객체를 생성하는 방식이므로,
+기존 객체를 새로운 객체로 복사하면서, 복사 과정에서 바꾸고 싶은 값만 새롭게 설정하여 새로운 객체를 생성한다.
+이와 같은 방식을 deepCopy, copyWith 라고 한다.
+
+freezed로 자동생성된 copyWith 코드는 꽤나 복잡하므로, 직접 구현할 때 어떤 식으로 구현하는지 코드를 간단히 살펴보자.
+
+```dart
+class Person {
+    ...
+    Person copyWith({String? name, String? address, int? age}) {
+        return Person(
+            name: name ?? this.name,
+            address: address ?? this.address,
+            age: age ?? this.age,
+        );
+    }
+}
+```
+
+이렇게 하면 새로 바꿀 값이 있으면 새로운 값을 넣고, 없으면 기존 값을 넣어 새로운 객체를 생성한다.
+이와 같은 방식으로 copyWith을 구현할 수 있고, freezed는 조금 더 복잡한 방식으로 구현되었을 뿐 개념적으론 같은 내용이다.
+여기까지 freezed로 모델을 간편하게 생성하는 방법을 공부하면서 자연스럽게 immutable, copyWith, final, const에 대해 알아보았다.
