@@ -81,15 +81,15 @@ class SimplePage extends StatelessWidget {
 }
 ```
 
-위젯에서는 GetBuilder를 활용해 구현할 수 있다. GetBuilder는 <>를 통해 컨트롤러를 찾아올 수 있다. (Get.find()와 동일)
-그리고 builder에서 controller를 인자로 하여 컨트롤러의 상태와 기능 등을 사용할 수 있고, 상태가 변화하면 update() 덕분에 재랜더링된다.
-단순 상태 관리에서 update()와 GetBuilder는 필수적이며, 이 둘은 짝지어 꼭 사용하면 된다.
-update()를 작성하고 GetBuilder를 안쓰면 아무리 시도해도 상태 변화를 위젯이 감지하지 못한다. (이 실수를 처음에 많이 했었음)
+위젯에서는 `GetBuilder`를 활용해 구현할 수 있다. `GetBuilder`는 <>를 통해 컨트롤러를 찾아올 수 있다. (`Get.find()`와 동일)
+그리고 `builder`에서 `controller`를 인자로 하여 컨트롤러의 상태와 기능 등을 사용할 수 있고, 상태가 변화하면 `update()` 덕분에 재랜더링된다.
+단순 상태 관리에서 `update()`와 `GetBuilder`는 필수적이며, 이 둘은 짝지어 꼭 사용하면 된다.
+`update()`를 작성하고 `GetBuilder`를 안쓰면 아무리 시도해도 상태 변화를 위젯이 감지하지 못한다. (이 실수를 처음에 많이 했었음)
 
 ## 2. 반응형 상태 관리(Reactive State Management)
 
-반응형 상태 관리는 update() 없이 사용할 수 있는 상태 관리 방법이다.
-상태 변화가 있을때에만 자동으로 재랜더링되는데, 이때 Rx, Observable 개념이 들어온다.
+반응형 상태 관리는 `update()` 없이 사용할 수 있는 상태 관리 방법이다.
+상태 변화가 있을때에만 자동으로 재랜더링되는데, 이때 `Rx`, `Observable` 개념이 들어온다.
 개념은 더보기에서 아주 자세히 알아보고, 간단히 말하면 지속적으로 관찰할 대상을 지정하는 것이다.
 
 ```dart
@@ -101,9 +101,9 @@ class ReactiveController extends GetxController {
 }
 ```
 
-이렇게 변수를 RxType으로 지정하고, 초기값에 .obs를 붙인다.
-그리고 해당 값을 수정, 접근할 때에는 name.value와 같이 사용한다.
-위젯에서는 GetX()를 사용한다.
+이렇게 변수를 `RxType`으로 지정하고, 초기값에 `.obs`를 붙인다.
+그리고 해당 값을 수정, 접근할 때에는 `name.value`와 같이 사용한다.
+위젯에서는 `GetX()`를 사용한다.
 
 ```dart
 class ReactivePage extends StatelessWidget {
@@ -125,9 +125,9 @@ class ReactivePage extends StatelessWidget {
 }
 ```
 
-기존 단순 상태 관리와 다른 점은 GetBuilder 대신 GetX를 빌더로 사용했다는 것이다.
-update()와 GetBuilder가 짝인 것과 같이, Rx.obs와 GetX가 짝이라고 생각하면 된다.
-Rx.obs를 위젯에서 사용하는 또다른 방법은 Obx이다.
+기존 단순 상태 관리와 다른 점은 `GetBuilder` 대신 `GetX`를 빌더로 사용했다는 것이다.
+`update()`와 `GetBuilder`가 짝인 것과 같이, `Rx.obs`와 `GetX`가 짝이라고 생각하면 된다.
+`Rx.obs`를 위젯에서 사용하는 또다른 방법은 `Obx`이다.
 
 ```dart
 class ObxPage extends StatelessWidget {
@@ -149,8 +149,8 @@ class ObxPage extends StatelessWidget {
 }
 ```
 
-Obx는 GetX와 다르게 컨트롤러를 find하는 코드, 기능이 없다.
-따라서 미리 Get.find()로 찾아놓아야 한다.
+`Obx`는 `GetX`와 다르게 컨트롤러를 `find`하는 코드, 기능이 없다.
+따라서 미리 `Get.find()`로 찾아놓아야 한다.
 
 ## 3. 의존성 주입 방법과 추천
 
