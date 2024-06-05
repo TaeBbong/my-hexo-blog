@@ -152,6 +152,69 @@ class ObxPage extends StatelessWidget {
 `Obx`는 `GetX`와 다르게 컨트롤러를 `find`하는 코드, 기능이 없다.
 따라서 미리 `Get.find()`로 찾아놓아야 한다.
 
-## 3. 의존성 주입 방법과 추천
+## 3. 의존성 주입 방법
 
-## (더보기) GetX가 상태를 관리하는 방법
+의존성 주입이란 무엇인가, 
+내가 이해한 의존성 주입이란 어떤 객체가 필요로 하는 데이터나 다른 객체를 외부에서 넣어주는 것이다.
+요건 객체지향 프로그래밍 기초 개념에서 자주 나오는 내용인데, 이론은 안본지 너무 오래돼서 나중에 CS 공부를 다시 할 때 자세히 봐야겠다.
+
+하여튼 우리가 플러터, 그리고 GetX에서 의존성 주입을 사용하는 것은 UI 페이지에서 사용해야 하는 기능을 담은 Controller, 또는 앱 전체에서 사용되는 Service를 가져와야 할 때 사용된다.
+
+그러면 그냥 기능 객체(Controller, Service)를 필요할 때마다 생성해서 쓰면 되지 않느냐 싶지만 그러면 새로운 객체가 생성되는 것이므로 당연히 그 전의 데이터가 없어진다. 따라서 필요한 시간동안엔 메모리 상에 객체를 올려놓고 쓰다가, 다 쓰면 그 때 자동으로 객체를 지우는 과정까지 의존성 주입에 필요하다.
+
+GetX에서는 put, lazyPut, putAsync 등의 방식을 사용하여 객체를 생성한다. 각각 간단히 설명하면 put은 그 즉시 생성, lazyPut은 객체가 필요해질 때 생성, putAsync는 비동기 처리 후 생성 이렇게 볼 수 있다. 아직까진 put이 제일 편해서 계속 put만 쓰고 있다. 필요할 때 생성하는 lazyPut이 put보다 효율은 더 좋다.
+
+```dart
+Get.put<T>(Controller());
+```
+
+대신 put을 사용하는 주된 이유는 해당 객체를 영구적으로 메모리에 남겨놓고 싶기 때문이다. 이를테면 인증 기능처럼 앱에서 특정 부분에만 쓰이지 않고 앱 전역에서 쓰이는 기능이 있다면 이는 put으로 초기에 생성해놓고 permenant: true 옵션을 줘서 계속 남겨 놓을 수 있다. lazyPut에도 영구적으로 남기는 옵션이 있긴 한데, 영구적으로 남기는 객체는 주로 초기에 생성되는 경우가 많아 put을 사용한다.
+
+이런 영구적으로 남기는 기능을 GetX에서 제대로 사용하는 방법은 GetxService를 사용하는 것이다. GetxService는 GetxController와 비슷하지만 위젯을 새로고침할 수 없고, 대신 앱 전역에서 영구적으로 사용된다는 특징을 가지고 있다. 위젯을 새로고침할 수 없다는 측면에서 Controller 보단 사용하기 약간 불편해서 아직까진 Service 객체 대신 Controller 객체를 만들고 필요할 때 이를 영구적으로 남겨 사용하고 있다.
+
+그럼 이 Get.put와 같은 의존성 주입 코드는 어디에 작성해야 할까? 이렇게 의존성 주입 코드를 작성하는 것을 바인딩이라고 한다. 바인딩 방법은 크게 두가지인데, 라우팅 등과 같이 페이지를 생성하는 부분에서 사용하거나, 앱 전체의 의존성 주입을 미리 선언해놓고 사용하는 방식이 있다. 라우팅에서 바인딩을 하면 페이지가 생성될 때 인스턴스가 생기고, 페이지가 종료될 때 인스턴스가 종료된다. 메모리 관리 차원에서 효율적이다. 앱 전체의 의존성을 미리 선언해놓고 main.dart에서 이를 실행하는 경우 앱 초기부터 필요한 인스턴스를 모두 생성할 수 있다. 메모리는 비효율적이겠지만 앱 시작하자마자 필요한 인스턴스가 있다면 선택해야 할 것이다.
+
+앱 전체의 의존성을 선언하는 방법은 다음과 같다.
+
+```dart
+// initial_binding.dart
+class InitialBinding extends Bindings {
+    @override
+    void dependencies() {
+        Get.put<MainService>(MainService(), permanent: true);
+        Get.put<SearchRepository>(SearchRepository(), permanent: true);
+        Get.lazyPut<HomeController>(HomeController());
+    }
+}
+```
+
+```dart
+// main.dart
+void main() async {
+    ...
+    InitialBindings().dependencies();
+    runApp(const MainApp());
+    ...
+}
+```
+
+페이지 생성 시 바인딩을 직접 해주는 방식은 다음과 같다.
+
+```dart
+MaterialButton(
+    child: Text("Go to NewPage"),
+    onPressed: () {
+        Get.to(NewPage(), binding: BindingBuilder(() {
+            Get.lazyPut<NewPageController>(
+                () => NewPageController());
+            }),
+        );
+    }
+),
+```
+
+이렇게 BindingBuilder를 활용하여 선언할 수 있다. 나는 주로 앱 전체의 의존성을 미리 선언해놓고 한번에 바인딩하는 편이다. 어차피 lazyPut을 활용하면 그 페이지가 생성될 때 인스턴스가 생기고, 사라질 때 인스턴스가 종료되므로 괜찮은 것 같다.
+
+## ~~(더보기) GetX가 상태를 관리하는 방법~~
+
+요건 GetX 프로젝트를 까보면서 천천히 정리해보겠습니다.
