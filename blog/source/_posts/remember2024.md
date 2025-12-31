@@ -1,6 +1,6 @@
 ---
-title: "(작성 중) [회고록] 2024년"
-excerpt: ""
+title: "[회고록] 2024년"
+excerpt: "사람은 점점 나아진다."
 thumbnail: img/images/placeholder-big-1.jpg 
 date: 2024-12-31 23:56:02
 tags:
